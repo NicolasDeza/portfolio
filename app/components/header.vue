@@ -98,7 +98,7 @@ const closeMenu = () => {
 
         <!-- LinkedIn -->
         <a
-          href="https://www.linkedin.com/in/TON_USERNAME/"
+          href="https://www.linkedin.com/in/nicolas-deza-411711330/"
           target="_blank"
           rel="noopener"
           aria-label="LinkedIn"
@@ -171,7 +171,7 @@ const closeMenu = () => {
 
           <!-- LinkedIn -->
           <a
-            href="https://www.linkedin.com/in/TON_USERNAME/"
+            href="https://www.linkedin.com/in/nicolas-deza-411711330/"
             target="_blank"
             rel="noopener"
             aria-label="LinkedIn"
