@@ -1,0 +1,12 @@
+.cursor-glow {
+  --x: 50%;
+  --y: 50%;
+
+  background: radial-gradient(
+    500px circle at var(--x) var(--y),
+    rgba(255, 255, 255, 0.04),
+    transparent 65%
+  );
+
+  transition: background-position 0.08s linear;
+}

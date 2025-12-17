@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
 
-  css: ["~/assets/css/global.css"],
+  css: ["~/assets/css/global.css", "~/assets/css/cursor-glow.css"],
+  // nuxt.config.ts
 
   modules: [
     "@nuxtjs/tailwindcss",
