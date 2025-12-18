@@ -22,11 +22,19 @@ import ProjectCard from "~/components/projects/ProjectCard.vue";
     <ProjectCard
       reverse
       title="Avh-Garden"
-      description="Site vitrine pour une entreprise dans le batiment d'aménagement intérieur et extérieur"
+      description="Site vitrine pour une entreprise dans le batiment d'aménagement intérieur et extérieur."
       role="Design & développement"
       stack="Wordpress, Elementor"
       image="/projects/avh-garden.be.png"
       link="https://avh-garden.be/"
+    />
+    <ProjectCard
+      title="Samu-Horticole"
+      description="Dashboard pour un indépendant horticole, permettant la gestion des clients et machines."
+      role="Design & développement"
+      stack="Laravel, Inertia, Vue, Tailwind"
+      image="/projects/samu-horticole.png"
+      link="/"
     />
   </section>
 </template>
