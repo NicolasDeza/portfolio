@@ -13,7 +13,6 @@
     "@nuxtjs/color-mode": "^4.0.0",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.14.0",
-    "@vueuse/motion": "^3.0.3",
     "gsap": "^3.14.2",
     "nuxt": "^4.2.2",
     "vue": "^3.5.25",
