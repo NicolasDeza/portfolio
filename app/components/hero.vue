@@ -30,7 +30,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section class="min-h-[100dvh] flex items-center pt-12 sm:pt-0">
+  <section id="hero" class="min-h-[100dvh] flex items-center pt-12 sm:pt-0">
     <div class="w-full flex justify-center">
       <!-- Bloc centré dans le wrapper -->
       <div class="max-w-3xl">
@@ -61,7 +61,7 @@ onMounted(async () => {
           </a>
 
           <a
-            href="#contact"
+            href="/contact"
             class="text-sm text-white/70 hover:text-white transition"
           >
             Me contacter
@@ -73,9 +73,8 @@ onMounted(async () => {
 </template>
 
 <style scoped>
-/* État initial avant l’animation */
 .animate-item {
   opacity: 0;
-  transform: translateY(30px);
+  /* transform: translateY(30px); */
 }
 </style>

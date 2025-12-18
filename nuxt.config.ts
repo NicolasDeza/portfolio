@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
+    "@vueuse/motion/nuxt",
   ],
 
   googleFonts: {

@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .h-line {
   position: absolute;
   left: 0;

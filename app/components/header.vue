@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const isMenuOpen = ref(false);
+const route = useRoute();
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
@@ -7,6 +8,15 @@ const toggleMenu = () => {
 
 const closeMenu = () => {
   isMenuOpen.value = false;
+};
+
+const goToHome = (e: Event) => {
+  closeMenu();
+
+  if (route.path === "/") {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 };
 </script>
 
@@ -19,14 +29,14 @@ const closeMenu = () => {
       <NuxtLink
         to="/"
         class="font-medium tracking-wide hover:opacity-80 transition whitespace-nowrap"
-        @click="closeMenu"
+        @click="goToHome"
       >
         Nicolas Deza
       </NuxtLink>
 
       <!-- Center: Nav Desktop -->
       <nav class="hidden md:flex items-center gap-6 text-sm text-white/80">
-        <NuxtLink to="/projects" class="hover:text-white transition">
+        <NuxtLink to="#projects" class="hover:text-white transition">
           Projets
         </NuxtLink>
         <NuxtLink to="/contact" class="hover:text-white transition">
