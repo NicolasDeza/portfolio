@@ -9,7 +9,7 @@ import ProjectCard from "~/components/projects/ProjectCard.vue";
   <!-- PROJETS -->
   <section id="projects" class="py-20 space-y-20 lg:py-32 lg:space-y-32">
     <h2 class="text-center text-3xl sm:text-4xl font-medium tracking-tight">
-      Projets
+      Projets réalisés
     </h2>
     <ProjectCard
       title="Atelier de Bidibule"

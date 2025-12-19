@@ -36,7 +36,7 @@ const goToHome = (e: Event) => {
 
       <!-- Center: Nav Desktop -->
       <nav class="hidden md:flex items-center gap-6 text-sm text-white/80">
-        <NuxtLink to="#projects" class="hover:text-white transition">
+        <NuxtLink to="/#projects" class="hover:text-white transition">
           Projets
         </NuxtLink>
         <NuxtLink to="/contact" class="hover:text-white transition">
@@ -140,7 +140,7 @@ const goToHome = (e: Event) => {
         class="md:hidden mt-2 py-4 px-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 flex flex-col gap-4"
       >
         <NuxtLink
-          to="#projects"
+          to="/#projects"
           class="text-white/80 hover:text-white transition py-2"
           @click="closeMenu"
         >

@@ -33,7 +33,7 @@ let rafId: number | null = null;
 let isRunning = false;
 
 onMounted(() => {
-  // Respect accessibilité
+  // Respect pour accessibilité
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
   const glow = document.querySelector(".cursor-glow") as HTMLElement | null;
