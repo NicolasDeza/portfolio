@@ -18,6 +18,10 @@ const goToHome = (e: Event) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 };
+
+// Vérifier si on est sur la page d'accueil
+const isHomePage = computed(() => route.path === "/");
+const isContactPage = computed(() => route.path === "/contact");
 </script>
 
 <template>
@@ -36,10 +40,22 @@ const goToHome = (e: Event) => {
 
       <!-- Center: Nav Desktop -->
       <nav class="hidden md:flex items-center gap-6 text-sm text-white/80">
-        <NuxtLink to="/#projects" class="hover:text-white transition">
+        <NuxtLink
+          to="/#projects"
+          :class="[
+            'hover:text-white transition',
+            isHomePage ? 'text-white' : '',
+          ]"
+        >
           Projets
         </NuxtLink>
-        <NuxtLink to="/contact" class="hover:text-white transition">
+        <NuxtLink
+          to="/contact"
+          :class="[
+            'hover:text-white transition',
+            isContactPage ? 'text-white' : '',
+          ]"
+        >
           Contact
         </NuxtLink>
       </nav>
@@ -141,14 +157,20 @@ const goToHome = (e: Event) => {
       >
         <NuxtLink
           to="/#projects"
-          class="text-white/80 hover:text-white transition py-2"
+          :class="[
+            'hover:text-white transition py-2',
+            isHomePage ? 'text-white' : 'text-white/80',
+          ]"
           @click="closeMenu"
         >
           Projets
         </NuxtLink>
         <NuxtLink
           to="/contact"
-          class="text-white/80 hover:text-white transition py-2"
+          :class="[
+            'hover:text-white transition py-2',
+            isContactPage ? 'text-white' : 'text-white/80',
+          ]"
           @click="closeMenu"
         >
           Contact

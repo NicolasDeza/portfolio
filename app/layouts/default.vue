@@ -16,7 +16,7 @@
 
     <!-- Wrapper -->
     <div
-      class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 sm:border-x border-white/10 flex-1 relative z-10"
+      class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 sm:border-x border-white/10 flex-1"
     >
       <main class="flex flex-col h-full">
         <slot />

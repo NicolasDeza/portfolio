@@ -30,7 +30,10 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section id="hero" class="min-h-[100dvh] flex items-center pt-12 sm:pt-0">
+  <section
+    id="hero"
+    class="min-h-[100dvh] flex items-center px-4 pt-12 sm:pt-0"
+  >
     <div class="w-full flex justify-center">
       <!-- Bloc centré dans le wrapper -->
       <div class="max-w-3xl">
@@ -46,16 +49,17 @@ onMounted(async () => {
         </p>
 
         <p :ref="setItemRef" class="animate-item mt-6 text-lg text-white/60">
-          Je crée des sites modernes et performants
+          Design moderne, performance et fiabilité pour une présence en ligne
+          professionnelle
         </p>
 
         <div
           :ref="setItemRef"
-          class="animate-item mt-10 flex items-center gap-6"
+          class="animate-item mt-10 flex flex-col sm:flex-row items-center gap-8 sm:gap-6"
         >
           <a
             href="#projects"
-            class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-black text-sm font-medium hover:bg-white/90 transition"
+            class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-black text-sm font-medium hover:bg-white/90 transition w-full sm:w-auto"
           >
             Voir mes projets
           </a>

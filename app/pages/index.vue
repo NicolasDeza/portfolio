@@ -38,4 +38,5 @@ import ProjectCard from "~/components/projects/ProjectCard.vue";
     />
   </section>
   <StackCarousel />
+  <AboutSection />
 </template>
