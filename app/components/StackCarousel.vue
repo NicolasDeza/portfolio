@@ -12,7 +12,7 @@ const stack = [
 </script>
 
 <template>
-  <section class="pb-20 sm:pb-32">
+  <section class="pb-16 sm:pb-32">
     <!-- Titre contenu -->
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-center text-3xl sm:text-4xl font-medium tracking-tight">

@@ -67,9 +67,15 @@ const year = new Date().getFullYear();
 
         <!-- Séparateur interne -->
         <div
-          class="mt-10 pt-6 border-t text-center border-white/10 text-xs text-white/40"
+          class="mt-4 sm:mt-8 pt-6 border-t text-center border-white/10 text-xs text-white/40 space-y-2"
         >
-          © {{ year }} Nicolas Deza | Tous droits réservés
+          <p>© {{ year }} Nicolas Deza | Tous droits réservés</p>
+          <NuxtLink
+            to="/politique-confidentialite"
+            class="inline-block hover:text-white/60 transition pt-1"
+          >
+            Politique de confidentialité
+          </NuxtLink>
         </div>
       </div>
     </div>
