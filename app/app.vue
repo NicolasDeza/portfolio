@@ -2,8 +2,8 @@
   <NuxtLoadingIndicator
     color="#FFFFFF"
     :height="2"
-    :duration="2000"
-    :throttle="200"
+    :duration="2500"
+    :throttle="0"
   />
 
   <NuxtLayout>
