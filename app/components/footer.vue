@@ -35,6 +35,8 @@ const year = new Date().getFullYear();
               <div class="flex gap-4">
                 <a
                   href="https://www.linkedin.com/in/nicolas-deza-411711330/"
+                  target="_blank"
+                  rel="noopener"
                   class="text-white/50 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-transparent transition"
                   aria-label="Voir mon profil LinkedIn"
                 >
@@ -42,6 +44,8 @@ const year = new Date().getFullYear();
                 </a>
                 <a
                   href="https://github.com/NicolasDeza"
+                  target="_blank"
+                  rel="noopener"
                   class="text-white/50 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-transparent transition"
                   aria-label="Voir mon profil GitHub"
                 >
@@ -49,6 +53,8 @@ const year = new Date().getFullYear();
                 </a>
                 <a
                   href="https://www.instagram.com/nicolas__deza/"
+                  target="_blank"
+                  rel="noopener"
                   class="text-white/50 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-transparent transition"
                   aria-label="Voir mon profil Instagram"
                 >
