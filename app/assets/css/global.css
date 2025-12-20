@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 .h-line {
   position: absolute;
   left: 0;
@@ -9,6 +10,7 @@ html {
   background-color: rgba(255, 255, 255, 0.05);
   pointer-events: none;
 }
+
 @keyframes marquee {
   0% {
     transform: translateX(0);

@@ -55,6 +55,7 @@ onUnmounted(() => {
   }
 });
 </script>
+
 <!-- layouts/default.vue -->
 <template>
   <div class="min-h-screen flex flex-col bg-[#171717] text-white relative">

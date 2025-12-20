@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center min-h-[calc(100vh-200px)] py-12">
+  <section class="flex items-center justify-center min-h-[100dvh] pt-32 py-12">
     <ContactForm />
-  </div>
+  </section>
 </template>

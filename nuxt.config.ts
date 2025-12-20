@@ -24,16 +24,17 @@ export default defineNuxtConfig({
     display: "swap",
   },
 
-  //  SMTP / nodemailer
+  // SMTP / nodemailer
   runtimeConfig: {
     smtp: {
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT || 587),
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
+      host: process.env.NUXT_SMTP_HOST,
+      port: parseInt(process.env.NUXT_SMTP_PORT || "587"),
+      user: process.env.NUXT_SMTP_USER,
+      pass: process.env.NUXT_SMTP_PASS,
     },
     mail: {
-      from: process.env.MAIL_FROM,
+      from: process.env.NUXT_MAIL_FROM,
+      to: process.env.NUXT_MAIL_TO,
     },
   },
 });
