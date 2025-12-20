@@ -14,7 +14,7 @@
 
     <Header />
 
-    <!-- Wrapper -->
+    <!-- Contenu centré -->
     <div
       class="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 sm:border-x border-white/10 flex-1"
     >
@@ -22,6 +22,9 @@
         <slot />
       </main>
     </div>
+
+    <!-- Footer FULL  -->
+    <Footer />
   </div>
 </template>
 

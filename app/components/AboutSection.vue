@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="pb-24 sm:pb-32">
+  <section class="pb-24 sm:pb-40">
     <div class="w-full mx-auto px-8 sm:px-0">
       <h2
         class="text-center mb-4 sm:mb-8 text-3xl sm:text-4xl pb-10 sm:pb-14 font-medium tracking-tight"
