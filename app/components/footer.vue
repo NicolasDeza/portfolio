@@ -5,7 +5,7 @@ const year = new Date().getFullYear();
 <template>
   <footer aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Pied de page</h2>
-    <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="w-full mx-auto sm:px-6 lg:px-8">
       <div
         class="max-w-[1200px] mx-auto round bg-white/[0.02] backdrop-blur-sm border border-white/10 px-6 sm:px-10 pt-10 sm:pt-16 pb-6"
       >
