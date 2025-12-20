@@ -69,7 +69,7 @@ const year = new Date().getFullYear();
         <div
           class="mt-10 pt-6 border-t text-center border-white/10 text-xs text-white/40"
         >
-          © {{ year }} Nicolas Deza | Tous droits réservés.
+          © {{ year }} Nicolas Deza | Tous droits réservés
         </div>
       </div>
     </div>

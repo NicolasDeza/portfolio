@@ -32,8 +32,8 @@ onMounted(async () => {
       y: 0,
       duration: 0.8,
       ease: "power3.out",
-      stagger: 0.12,
-      delay: 0.2,
+      stagger: 0.25,
+      delay: 0.3,
     });
   }
 });
@@ -51,7 +51,7 @@ onMounted(async () => {
         <h1
           id="hero-title"
           :ref="setItemRef"
-          class="animate-item text-5xl sm:text-6xl lg:text-7xl font-semibold leading-tight"
+          class="animate-item text-4xl sm:text-6xl lg:text-7xl font-semibold leading-tight"
         >
           Nicolas Deza
         </h1>

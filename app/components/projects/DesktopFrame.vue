@@ -17,9 +17,9 @@ defineProps<{
         v-if="showBar"
         class="h-9 flex items-center gap-2 px-4 border-b border-white/5 bg-black/40"
       >
-        <span class="w-2.5 h-2.5 rounded-full bg-white/20" />
-        <span class="w-2.5 h-2.5 rounded-full bg-white/20" />
-        <span class="w-2.5 h-2.5 rounded-full bg-white/20" />
+        <span class="w-2.5 h-2.5 rounded-full bg-red-500/60" />
+        <span class="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
+        <span class="w-2.5 h-2.5 rounded-full bg-green-500/60" />
       </div>
 
       <!-- Screenshot -->

@@ -27,7 +27,7 @@ const isContactPage = computed(() => route.path === "/contact");
 <template>
   <header class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] md:w-auto">
     <div
-      class="flex items-center justify-between gap-4 md:gap-16 px-6 py-3 rounded-full bg-white/5 backdrop-blur-md border border-white/10"
+      class="flex items-center justify-between gap-4 sm:gap-20 px-6 py-3 rounded-full bg-white/5 backdrop-blur-md border border-white/10"
     >
       <!-- Partie 1 -> Prénom + Nom -->
       <NuxtLink
@@ -39,7 +39,7 @@ const isContactPage = computed(() => route.path === "/contact");
       </NuxtLink>
 
       <!-- Center: Nav Desktop -->
-      <nav class="hidden md:flex items-center gap-6 text-sm text-white/80">
+      <nav class="hidden md:flex items-center gap-8 text-sm text-white/80">
         <NuxtLink
           to="/#projects"
           :class="[
