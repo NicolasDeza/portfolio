@@ -109,13 +109,13 @@ const submit = async () => {
         <!-- Nom -->
         <div class="space-y-1.5 sm:space-y-2">
           <label for="name" class="block text-xs sm:text-sm text-white/70">
-            Nom
+            Prénom
           </label>
           <input
             id="name"
             v-model="form.name"
             type="text"
-            placeholder="Votre nom"
+            placeholder="Votre prénom"
             class="w-full rounded-lg bg-white/5 border border-white/10 px-3 sm:px-4 py-2.5 sm:py-3 text-sm outline-none focus:border-white/30 focus:ring-2 focus:ring-white/20 transition"
             :class="{ 'border-red-500/50': errors.name }"
           />
