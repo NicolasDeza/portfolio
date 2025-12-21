@@ -18,7 +18,7 @@
 
         <NuxtLink
           to="/contact"
-          class="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-medium text-white border border-white/20 hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-transparent transition"
+          class="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-medium text-white border border-white/20 hover:border-white/40 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-transparent transition-all duration-300"
           aria-label="Accéder à la page de contact"
         >
           Me contacter
