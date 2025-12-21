@@ -65,7 +65,7 @@ onUnmounted(() => {
       <span class="h-line top-[78vh]" />
     </div>
 
-    <!-- Cursor glow (Ecran pc seulement) -->
+    <!-- Cursor glow (Ecran de pc seulement) -->
     <div
       class="cursor-glow fixed inset-0 pointer-events-none z-[1] hidden lg:block"
     />
@@ -81,7 +81,7 @@ onUnmounted(() => {
       </main>
     </div>
 
-    <!-- Footer FULL 1200px  -->
+    <!-- Footer   -->
     <Footer />
   </div>
 </template>
