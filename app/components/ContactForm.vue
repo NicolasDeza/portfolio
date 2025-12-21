@@ -116,7 +116,7 @@ const submit = async () => {
             v-model="form.name"
             type="text"
             placeholder="Votre prénom"
-            class="w-full rounded-lg bg-white/5 border border-white/10 px-3 sm:px-4 py-2.5 sm:py-3 text-sm outline-none focus:border-white/30 focus:ring-2 focus:ring-white/20 transition"
+            class="w-full rounded-lg bg-white/5 border border-white/10 px-3 sm:px-4 py-2.5 sm:py-3 text-base outline-none focus:border-white/30 focus:ring-2 focus:ring-white/20 transition"
             :class="{ 'border-red-500/50': errors.name }"
           />
           <p v-if="errors.name" class="text-xs text-red-400 mt-1">
@@ -134,7 +134,7 @@ const submit = async () => {
             v-model="form.email"
             type="email"
             placeholder="email@exemple.com"
-            class="w-full rounded-lg bg-white/5 border border-white/10 px-3 sm:px-4 py-2.5 sm:py-3 text-sm outline-none focus:border-white/30 focus:ring-2 focus:ring-white/20 transition"
+            class="w-full rounded-lg bg-white/5 border border-white/10 px-3 sm:px-4 py-2.5 sm:py-3 text-base outline-none focus:border-white/30 focus:ring-2 focus:ring-white/20 transition"
             :class="{ 'border-red-500/50': errors.email }"
           />
           <p v-if="errors.email" class="text-xs text-red-400 mt-1">
@@ -151,7 +151,7 @@ const submit = async () => {
             id="message"
             v-model="form.message"
             rows="5"
-            class="w-full rounded-lg bg-white/5 border border-white/10 px-3 sm:px-4 py-2.5 sm:py-3 text-sm outline-none resize-none focus:border-white/30 focus:ring-2 focus:ring-white/20 transition"
+            class="w-full rounded-lg bg-white/5 border border-white/10 px-3 sm:px-4 py-2.5 sm:py-3 text-base outline-none resize-none focus:border-white/30 focus:ring-2 focus:ring-white/20 transition"
             :class="{ 'border-red-500/50': errors.message }"
             placeholder="Décrivez votre projet ou votre besoin..."
           />
