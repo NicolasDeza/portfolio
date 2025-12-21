@@ -24,7 +24,41 @@ export default defineNuxtConfig({
     display: "swap",
   },
 
-  // SMTP / nodemailer
+  /* =========================
+     SEO GLOBAL (BASE)
+     ========================= */
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "fr",
+      },
+
+      title: "Nicolas Deza – Développeur Web",
+      titleTemplate: "%s – Nicolas Deza",
+
+      meta: [
+        {
+          name: "description",
+          content:
+            "Développeur web freelance en Belgique spécialisé en Nuxt, Vue.js, Laravel et WordPress. Création de sites modernes, performants et sur mesure.",
+        },
+        { name: "robots", content: "index, follow" },
+        { name: "author", content: "Nicolas Deza" },
+      ],
+
+      link: [
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "/favicon.png",
+        },
+      ],
+    },
+  },
+
+  /* =========================
+     SMTP / Nodemailer
+     ========================= */
   runtimeConfig: {
     smtp: {
       host: process.env.NUXT_SMTP_HOST,

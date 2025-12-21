@@ -1,5 +1,24 @@
 <script setup lang="ts">
 import ProjectCard from "~/components/projects/ProjectCard.vue";
+
+useSeoMeta({
+  title: "Développeur Web",
+  description:
+    "Développeur Full Web spécialisé en Nuxt, Vue.js, Laravel et WordPress. Je crée des sites web sur mesure, e-commerce et applications web modernes en Belgique.",
+
+  ogTitle: "Développeur Full Stack – Nicolas Deza",
+  ogDescription:
+    "Développeur Web spécialisé en Nuxt, Vue.js, Laravel et WordPress. Sites web sur mesure, e-commerce et applications web modernes.",
+  ogImage: "https://www.nicolasdeza.com/og-image.jpg",
+  ogUrl: "https://www.nicolasdeza.com",
+  ogType: "website",
+
+  twitterCard: "summary_large_image",
+  twitterTitle: "Développeur Full Stack – Nicolas Deza",
+  twitterDescription:
+    "Développeur Full Stack spécialisé en Laravel, Vue.js et Nuxt. Sites web sur mesure, e-commerce et applications web modernes.",
+  twitterImage: "https://www.nicolasdeza.com/og-image.jpg",
+});
 </script>
 
 <template>
