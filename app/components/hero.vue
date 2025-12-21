@@ -12,6 +12,40 @@ const setItemRef: VNodeRef = (el) => {
     items.value.push(el);
   }
 };
+// Animation texte
+const words = ["fiabilité", "rapidité", "durabilité"] as const;
+const currentWord = ref("");
+const displayedWord = ref("");
+let index = 0;
+let isTyping = false;
+
+// Fonction pour écrire le mot lettre par lettre
+const typeWord = async (word: string) => {
+  if (isTyping) return;
+  isTyping = true;
+
+  // Effacer l'ancien mot
+  for (let i = displayedWord.value.length; i >= 0; i--) {
+    displayedWord.value = displayedWord.value.slice(0, i);
+    await new Promise((resolve) => setTimeout(resolve, 30));
+  }
+
+  // Écrire le nouveau mot
+  currentWord.value = word;
+  for (let i = 0; i <= word.length; i++) {
+    displayedWord.value = word.slice(0, i);
+    await new Promise((resolve) => setTimeout(resolve, 80));
+  }
+
+  isTyping = false;
+};
+
+// Fonction pour changer de mot
+const changeWord = () => {
+  index = (index + 1) % words.length;
+  const nextWord = words[index];
+  if (nextWord) typeWord(nextWord);
+};
 
 onMounted(async () => {
   await nextTick();
@@ -26,6 +60,11 @@ onMounted(async () => {
   if (prefersReducedMotion) {
     // Afficher immédiatement sans animation
     gsap.set(items.value, { opacity: 1, y: 0 });
+    const firstWord = words[0];
+    if (firstWord) {
+      currentWord.value = firstWord;
+      displayedWord.value = firstWord;
+    }
   } else {
     gsap.to(items.value, {
       opacity: 1,
@@ -35,6 +74,14 @@ onMounted(async () => {
       stagger: 0.25,
       delay: 0.3,
     });
+
+    // Démarrer l'animation de frappe après l'animation d'entrée
+    setTimeout(() => {
+      const firstWord = words[0];
+      if (firstWord) typeWord(firstWord);
+      // Changer de mot toutes les 3 secondes
+      setInterval(changeWord, 3000);
+    }, 1800);
   }
 });
 </script>
@@ -61,12 +108,22 @@ onMounted(async () => {
           class="animate-item mt-4 text-xl text-white/80"
           role="doc-subtitle"
         >
-          Développeur web
+          Créateur de sites web
         </p>
 
-        <p :ref="setItemRef" class="animate-item mt-6 text-lg text-white/60">
-          Design moderne, performance et fiabilité pour une présence en ligne
-          professionnelle
+        <p
+          :ref="setItemRef"
+          class="animate-item mt-6 text-lg text-white/60 leading-relaxed"
+        >
+          Design moderne, performance et
+          <span
+            class="inline-block font-medium text-white transition-all duration-300 ease-out ml-1 min-w-[120px]"
+          >
+            {{ displayedWord }}
+            <span class="animate-pulse">|</span>
+          </span>
+          <br />
+          pour une présence en ligne professionnelle
         </p>
 
         <div
