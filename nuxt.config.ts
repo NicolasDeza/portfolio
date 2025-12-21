@@ -45,9 +45,6 @@ export default defineNuxtConfig({
         { name: "robots", content: "index, follow" },
         { name: "author", content: "Nicolas Deza" },
         { name: "theme-color", content: "#171717" },
-        {
-          name: "viewport",
-        },
       ],
 
       link: [
