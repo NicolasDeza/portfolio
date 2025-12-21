@@ -13,7 +13,7 @@ const setItemRef: VNodeRef = (el) => {
   }
 };
 // Animation texte
-const words = ["fiabilité", "rapidité", "durabilité"] as const;
+const words = ["fiabilité.", "rapidité.", "durabilité."] as const;
 const currentWord = ref("");
 const displayedWord = ref("");
 let index = 0;
