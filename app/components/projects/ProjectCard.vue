@@ -71,8 +71,9 @@ onMounted(() => {
         target="_blank"
         rel="noopener"
         class="inline-flex items-center justify-center px-6 py-2 rounded-full bg-white text-black text-sm font-medium hover:bg-white/90 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent"
+        :aria-label="`Voir le projet ${title} (ouvre dans un nouvel onglet)`"
       >
-        Voir le projet
+        Voir le projet →
       </a>
     </div>
   </section>
