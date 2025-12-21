@@ -13,7 +13,7 @@ const setItemRef: VNodeRef = (el) => {
   }
 };
 // Animation texte
-const words = ["fiabilité.", "rapidité.", "durabilité."] as const;
+const words = ["fiabilité", "rapidité", "durabilité"] as const;
 const currentWord = ref("");
 const displayedWord = ref("");
 let index = 0;
@@ -123,7 +123,7 @@ onMounted(async () => {
             <span class="animate-pulse">|</span>
           </span>
           <br />
-          pour une présence en ligne professionnelle
+          Pour une présence en ligne professionnelle
         </p>
 
         <div
