@@ -1,5 +1,16 @@
+html,
+body {
+  background: #171717;
+  min-height: 100dvh;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+#__nuxt {
+  background: #171717;
+  min-height: 100dvh;
 }
 
 .h-line {
