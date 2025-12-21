@@ -19,10 +19,10 @@
         </p>
 
         <p class="text-white/60 leading-relaxed">
-          Basé en Belgique, j'accompagne des indépendants et petites structures
-          dans la création de solutions web sur mesure, avec une approche
-          orientée clarté, expérience utilisateur et fiabilité sur le long
-          terme.
+          Basé en Belgique, j’accompagne des indépendants et petites structures
+          dans la création de solutions web sur mesure, avec un objectif clair :
+          proposer des outils fiables, lisibles et efficaces, qui soutiennent
+          leur activité sur le long terme.
         </p>
       </div>
     </div>

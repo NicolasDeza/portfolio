@@ -47,7 +47,7 @@ export default defineEventHandler(async (event) => {
   try {
     await transporter.sendMail({
       from: `"Portfolio Nicolas" <${config.mail.from}>`,
-      to: config.mail.from, // redirection gérée par o2switch
+      to: config.mail.to,
       replyTo: email,
       subject: `Nouveau message de ${name}`,
       text: `Nom : ${name}
