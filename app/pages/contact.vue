@@ -19,7 +19,9 @@ useSeoMeta({
 </script>
 
 <template>
-  <section class="flex items-center justify-center min-h-[100dvh] pt-32 py-12">
+  <section
+    class="flex items-center justify-center min-h-[100dvh] pt-32 py-12 pb-10 sm:pb-16"
+  >
     <ContactForm />
   </section>
 </template>
