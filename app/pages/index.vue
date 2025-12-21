@@ -6,7 +6,7 @@ useSeoMeta({
   description:
     "Développeur Full Web spécialisé en Nuxt, Vue.js, Laravel et WordPress. Je crée des sites web sur mesure, e-commerce et applications web modernes en Belgique.",
 
-  ogTitle: "Développeur Full Stack – Nicolas Deza",
+  ogTitle: "Développeur Web – Nicolas Deza",
   ogDescription:
     "Développeur Web spécialisé en Nuxt, Vue.js, Laravel et WordPress. Sites web sur mesure, e-commerce et applications web modernes.",
   ogImage: "https://www.nicolasdeza.com/og-image.jpg",
@@ -14,9 +14,9 @@ useSeoMeta({
   ogType: "website",
 
   twitterCard: "summary_large_image",
-  twitterTitle: "Développeur Full Stack – Nicolas Deza",
+  twitterTitle: "Développeur Web – Nicolas Deza",
   twitterDescription:
-    "Développeur Full Stack spécialisé en Laravel, Vue.js et Nuxt. Sites web sur mesure, e-commerce et applications web modernes.",
+    "Développeur Web spécialisé en Nuxt, Vue.js, Laravel et WordPress. Sites web sur mesure, e-commerce et applications web modernes.",
   twitterImage: "https://www.nicolasdeza.com/og-image.jpg",
 });
 </script>
