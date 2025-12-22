@@ -22,7 +22,7 @@ const goToHome = (e: Event) => {
         >
           <!-- Identité -->
           <div>
-            <h3 class="font-medium text-white mb-4">
+            <p class="font-medium text-white mb-4">
               <NuxtLink
                 to="/"
                 class="hover:opacity-80 transition"
@@ -30,7 +30,7 @@ const goToHome = (e: Event) => {
               >
                 Nicolas Deza
               </NuxtLink>
-            </h3>
+            </p>
             <p class="text-sm text-white/60">
               Développeur web — sites modernes et performants
             </p>
