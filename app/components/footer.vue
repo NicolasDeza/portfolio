@@ -1,5 +1,13 @@
 <script setup lang="ts">
 const year = new Date().getFullYear();
+const route = useRoute();
+
+const goToHome = (e: Event) => {
+  if (route.path === "/") {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+};
 </script>
 
 <template>
@@ -14,7 +22,15 @@ const year = new Date().getFullYear();
         >
           <!-- Identité -->
           <div>
-            <p class="font-medium text-white mb-4">Nicolas Deza</p>
+            <h3 class="font-medium text-white mb-4">
+              <NuxtLink
+                to="/"
+                class="hover:opacity-80 transition"
+                @click="goToHome"
+              >
+                Nicolas Deza
+              </NuxtLink>
+            </h3>
             <p class="text-sm text-white/60">
               Développeur web — sites modernes et performants
             </p>
