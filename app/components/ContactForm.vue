@@ -164,7 +164,7 @@ const submit = async () => {
         <button
           type="submit"
           :disabled="loading"
-          class="w-full h-10 sm:h-11 rounded-full text-sm sm:text-base font-medium bg-white text-black hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/50 disabled:opacity-50 disabled:cursor-not-allowed transition"
+          class="w-full h-10 sm:h-11 rounded-full text-sm sm:text-base font-medium bg-white text-black hover:bg-white/90 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 transition-all duration-300"
         >
           <span v-if="!loading">Envoyer le message</span>
           <span v-else>Envoi en cours…</span>
