@@ -39,9 +39,9 @@ const submit = async () => {
       <!-- Colonne gauche : Informations -->
       <div class="space-y-4 md:space-y-6">
         <div>
-          <h2 class="text-2xl sm:text-3xl font-medium mb-3 md:mb-2">
+          <h1 class="text-2xl sm:text-3xl font-medium mb-3 md:mb-2">
             Me contacter
-          </h2>
+          </h1>
           <p class="text-sm sm:text-base text-white/60 leading-relaxed">
             Un projet à concrétiser ? Contactez-moi pour en discuter et définir
             la meilleure solution.

@@ -1,5 +1,10 @@
 <script setup lang="ts">
+import { onMounted, nextTick } from "vue";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import ProjectCard from "~/components/projects/ProjectCard.vue";
+
+gsap.registerPlugin(ScrollTrigger);
 
 useSeoMeta({
   title: "Développeur Web",
@@ -18,6 +23,44 @@ useSeoMeta({
   twitterDescription:
     "Développeur Web spécialisé en Nuxt, Vue.js, Laravel et WordPress. Sites web sur mesure, e-commerce et applications web modernes.",
   twitterImage: "https://www.nicolasdeza.com/og-image.jpg",
+});
+
+onMounted(async () => {
+  if (process.server) return;
+
+  await nextTick();
+  await new Promise((r) => setTimeout(r, 100));
+
+  const cards = gsap.utils.toArray<HTMLElement>("#projects .project-card");
+
+  if (!cards.length) return;
+
+  gsap.fromTo(
+    cards,
+    {
+      opacity: 0,
+      y: 150,
+      scale: 0.9,
+      rotateX: 25,
+    },
+    {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      rotateX: 0,
+      duration: 2.2,
+      ease: "power4.out",
+      stagger: {
+        amount: 2.0,
+        from: "center",
+      },
+      scrollTrigger: {
+        trigger: "#projects",
+        start: "top 80%",
+        once: true,
+      },
+    }
+  );
 });
 </script>
 
