@@ -18,8 +18,33 @@ html {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.05) calc(var(--grid-progress, 0%) - 5%),
+    rgba(59, 130, 246, 0.4) calc(var(--grid-progress, 0%) - 2%),
+    rgba(96, 165, 250, 0.8) var(--grid-progress, 0%),
+    rgba(59, 130, 246, 0.4) calc(var(--grid-progress, 0%) + 2%),
+    rgba(255, 255, 255, 0.05) calc(var(--grid-progress, 0%) + 5%),
+    rgba(255, 255, 255, 0.05) 100%
+  );
   pointer-events: none;
+  animation: grid-line-flow 8s linear infinite;
+}
+
+@property --grid-progress {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+}
+
+@keyframes grid-line-flow {
+  0% {
+    --grid-progress: -10%;
+  }
+  100% {
+    --grid-progress: 110%;
+  }
 }
 
 @keyframes marquee {
@@ -33,4 +58,105 @@ html {
 
 .animate-marquee {
   animation: marquee 32s linear infinite;
+}
+
+.neon-border {
+  position: relative;
+  z-index: 0;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  overflow: visible;
+}
+
+.neon-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--angle),
+    transparent 0deg 70deg,
+    #3b82f6 120deg,
+    #60a5fa 180deg,
+    #93c5fd 200deg,
+    #60a5fa 220deg,
+    #3b82f6 280deg,
+    transparent 320deg 360deg
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.neon-border:hover::before {
+  opacity: 1;
+  animation: electric-border 3s linear infinite;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes electric-border {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+
+/* Bordures verticales électriques */
+.grid-border {
+  position: relative;
+}
+
+.grid-border::before,
+.grid-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.1) calc(var(--v-progress, 0%) - 8%),
+    rgba(59, 130, 246, 0.5) calc(var(--v-progress, 0%) - 3%),
+    rgba(96, 165, 250, 0.9) var(--v-progress, 0%),
+    rgba(59, 130, 246, 0.5) calc(var(--v-progress, 0%) + 3%),
+    rgba(255, 255, 255, 0.1) calc(var(--v-progress, 0%) + 8%),
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  pointer-events: none;
+  animation: grid-vertical-flow 4s linear infinite;
+}
+
+.grid-border::before {
+  left: -1px;
+}
+
+.grid-border::after {
+  right: -1px;
+}
+
+@property --v-progress {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+}
+
+@keyframes grid-vertical-flow {
+  0% {
+    --v-progress: -15%;
+  }
+  100% {
+    --v-progress: 115%;
+  }
 }
