@@ -86,3 +86,82 @@ html {
     --angle: 360deg;
   }
 }
+
+/* Effet de scintillement électrique sur le border bouton */
+.text-electric {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ffffff calc(var(--text-progress, 0%) - 15%),
+    #3b82f6 calc(var(--text-progress, 0%) - 5%),
+    #60a5fa var(--text-progress, 0%),
+    #93c5fd calc(var(--text-progress, 0%) + 3%),
+    #60a5fa calc(var(--text-progress, 0%) + 8%),
+    #3b82f6 calc(var(--text-progress, 0%) + 15%),
+    #ffffff calc(var(--text-progress, 0%) + 25%),
+    #ffffff 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer 4s linear infinite;
+}
+
+@property --text-progress {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+}
+
+@keyframes text-shimmer {
+  0% {
+    --text-progress: -30%;
+  }
+  100% {
+    --text-progress: 130%;
+  }
+}
+
+/* GRID ANIM */
+@property --grid-progress {
+  syntax: "<percentage>";
+  initial-value: -30%;
+  inherits: false;
+}
+
+@keyframes grid-shimmer {
+  0% {
+    --grid-progress: -30%;
+  }
+  100% {
+    --grid-progress: 130%;
+  }
+}
+
+.h-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+
+  /* 🧱 Ligne de base toujours visible */
+  background-color: rgba(255, 255, 255, 0.1);
+
+  /* ⚡ Diffusion bleue par-dessus */
+  background-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent calc(var(--grid-progress) - 18%),
+    rgba(59, 130, 246, 0.25) calc(var(--grid-progress) - 6%),
+    rgba(96, 165, 250, 0.45) var(--grid-progress),
+    rgba(59, 130, 246, 0.25) calc(var(--grid-progress) + 6%),
+    transparent calc(var(--grid-progress) + 18%),
+    transparent 100%
+  );
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  animation: grid-shimmer 4s linear infinite;
+}
