@@ -34,7 +34,7 @@ const goToHome = (e: Event) => {
             <p class="text-sm text-white/60">
               Développeur web — sites modernes et performants
             </p>
-            <p class="text-sm text-white/40">Basé en Belgique</p>
+            <p class="text-sm text-white/40 mt-1">Basé en Belgique</p>
           </div>
 
           <!-- Contact / Liens -->
