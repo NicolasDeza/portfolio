@@ -60,7 +60,7 @@ onUnmounted(() => {
 <template>
   <div class="min-h-screen flex flex-col bg-[#171717] text-white relative">
     <!-- Grille décorative -->
-    <div class="fixed inset-0 pointer-events-none z-0">
+    <div class="fixed inset-0 pointer-events-none z-10 sm:z-0">
       <span class="h-line top-[22vh]" />
       <!-- <span class="h-line top-[50vh]" /> -->
       <span class="h-line top-[78vh]" />
