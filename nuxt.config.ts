@@ -9,7 +9,31 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
+    "@nuxtjs/sitemap",
   ],
+
+  /* =========================
+     SITE (REQUIS POUR SITEMAP)
+     ========================= */
+  site: {
+    url: "https://www.nicolasdeza.com",
+  },
+
+  /* =========================
+     SITEMAP
+     ========================= */
+  sitemap: {
+    urls: [
+      {
+        loc: "/",
+        priority: 1.0,
+      },
+      {
+        loc: "/contact",
+        priority: 0.8,
+      },
+    ],
+  },
 
   colorMode: {
     preference: "dark",
