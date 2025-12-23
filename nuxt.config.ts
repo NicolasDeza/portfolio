@@ -34,7 +34,7 @@ export default defineNuxtConfig({
       },
 
       title: "Nicolas Deza – Développeur Web",
-      titleTemplate: "%s – Nicolas Deza",
+      titleTemplate: "Nicolas Deza - %s",
 
       meta: [
         {
