@@ -8,6 +8,7 @@ const stack = [
   { name: "Inertia", src: "/stack/inertia.svg" },
   { name: "Stripe", src: "/stack/stripe.svg" },
   { name: "WordPress", src: "/stack/wordpress.svg" },
+  { name: "Medusa", src: "/stack/medusa.svg" },
 ];
 </script>
 
