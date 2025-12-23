@@ -78,6 +78,12 @@ export default defineNuxtConfig({
         },
         {
           rel: "icon",
+          type: "image/png",
+          sizes: "48x48",
+          href: "/nuxt-logo.png",
+        },
+        {
+          rel: "icon",
           type: "image/x-icon",
           href: "/favicon.ico",
         },
