@@ -49,6 +49,10 @@ export default defineNuxtConfig({
 
       link: [
         {
+          rel: "canonical",
+          href: "https://www.nicolasdeza.com/",
+        },
+        {
           rel: "icon",
           type: "image/x-icon",
           href: "/favicon.ico",

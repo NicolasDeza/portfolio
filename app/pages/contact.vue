@@ -1,4 +1,12 @@
 <script setup lang="ts">
+useHead({
+  link: [
+    {
+      rel: "canonical",
+      href: "https://www.nicolasdeza.com/contact",
+    },
+  ],
+});
 useSeoMeta({
   title: "Contact",
   description:

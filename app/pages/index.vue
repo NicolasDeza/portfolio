@@ -6,6 +6,15 @@ import ProjectCard from "~/components/projects/ProjectCard.vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
+useHead({
+  link: [
+    {
+      rel: "canonical",
+      href: "https://www.nicolasdeza.com/",
+    },
+  ],
+});
+
 useSeoMeta({
   title: "Développeur Web",
   description:
