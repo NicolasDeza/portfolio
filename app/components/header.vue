@@ -19,6 +19,16 @@ const goToHome = (e: Event) => {
   }
 };
 
+const goToProjects = (e: Event) => {
+  closeMenu();
+
+  if (route.path === "/") {
+    e.preventDefault();
+    const projectsSection = document.getElementById("projects");
+    projectsSection?.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 // Vérifier si on est sur la page d'accueil
 const isHomePage = computed(() => route.path === "/");
 const isContactPage = computed(() => route.path === "/contact");
@@ -42,10 +52,12 @@ const isContactPage = computed(() => route.path === "/contact");
       <nav class="hidden md:flex items-center gap-8 text-sm text-white/80">
         <NuxtLink
           to="/#projects"
+          href="/#projects"
           :class="[
             'hover:text-white transition',
             isHomePage ? 'text-white' : '',
           ]"
+          @click="goToProjects"
         >
           Projets
         </NuxtLink>
@@ -157,11 +169,12 @@ const isContactPage = computed(() => route.path === "/contact");
       >
         <NuxtLink
           to="/#projects"
+          href="/#projects"
           :class="[
             'hover:text-white transition py-2',
             isHomePage ? 'text-white' : 'text-white/80',
           ]"
-          @click="closeMenu"
+          @click="goToProjects"
         >
           Projets
         </NuxtLink>

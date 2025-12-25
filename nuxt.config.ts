@@ -57,8 +57,7 @@ export default defineNuxtConfig({
         lang: "fr",
       },
 
-      title: "Nicolas Deza – Développeur Web",
-      titleTemplate: "Nicolas Deza - %s",
+      titleTemplate: "%s - Nicolas Deza",
 
       meta: [
         {
@@ -72,10 +71,6 @@ export default defineNuxtConfig({
       ],
 
       link: [
-        {
-          rel: "canonical",
-          href: "https://www.nicolasdeza.com/",
-        },
         {
           rel: "icon",
           type: "image/png",

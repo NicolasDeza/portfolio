@@ -1,6 +1,24 @@
+<script setup lang="ts">
+useHead({
+  link: [
+    {
+      rel: "canonical",
+      href: "https://www.nicolasdeza.com/politique-confidentialite",
+    },
+  ],
+});
+
+useSeoMeta({
+  title: "Politique de confidentialité",
+  description:
+    "Politique de confidentialité de nicolasdeza.com. Informations sur la collecte, l'utilisation et la protection de vos données personnelles.",
+  robots: "noindex, follow",
+});
+</script>
+
 <template>
   <section class="py-24 sm:py-32">
-    <div class="w-full max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="w-full max-w-4xl mt-6 mx-auto px-4 sm:px-6">
       <h1 class="text-3xl sm:text-4xl font-medium mb-8">
         Politique de confidentialité
       </h1>
