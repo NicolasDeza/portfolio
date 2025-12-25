@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { nextTick } from "vue";
-
 const isMenuOpen = ref(false);
 const route = useRoute();
 
@@ -12,40 +10,16 @@ const closeMenu = () => {
   isMenuOpen.value = false;
 };
 
-const goToHome = async (e?: Event) => {
+const goToHome = (e: Event) => {
   closeMenu();
 
   if (route.path === "/") {
-    e?.preventDefault();
+    e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
-  } else {
-    await navigateTo("/", { replace: true });
-    window.scrollTo({ top: 0 });
   }
 };
 
-const goToProjects = async (e?: Event) => {
-  closeMenu();
-
-  if (route.path !== "/") {
-    e?.preventDefault();
-    await navigateTo("/");
-    await nextTick();
-
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        document
-          .getElementById("projects")
-          ?.scrollIntoView({ behavior: "smooth" });
-      });
-    });
-  } else {
-    e?.preventDefault();
-    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
-  }
-};
-
-// États de page
+// Vérifier si on est sur la page d'accueil
 const isHomePage = computed(() => route.path === "/");
 const isContactPage = computed(() => route.path === "/contact");
 </script>
@@ -66,19 +40,21 @@ const isContactPage = computed(() => route.path === "/contact");
 
       <!-- Center: Nav Desktop -->
       <nav class="hidden md:flex items-center gap-8 text-sm text-white/80">
-        <button
-          type="button"
-          class="hover:text-white transition"
-          :class="isHomePage ? 'text-white' : ''"
-          @click="goToProjects"
+        <NuxtLink
+          to="/#projects"
+          :class="[
+            'hover:text-white transition',
+            isHomePage ? 'text-white' : '',
+          ]"
         >
           Projets
-        </button>
-
+        </NuxtLink>
         <NuxtLink
           to="/contact"
-          class="hover:text-white transition"
-          :class="isContactPage ? 'text-white' : ''"
+          :class="[
+            'hover:text-white transition',
+            isContactPage ? 'text-white' : '',
+          ]"
         >
           Contact
         </NuxtLink>
@@ -179,19 +155,22 @@ const isContactPage = computed(() => route.path === "/contact");
         v-if="isMenuOpen"
         class="md:hidden mt-2 py-4 px-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 flex flex-col gap-4"
       >
-        <button
-          type="button"
-          class="hover:text-white transition py-2"
-          :class="isHomePage ? 'text-white' : 'text-white/80'"
-          @click="goToProjects"
+        <NuxtLink
+          to="/#projects"
+          :class="[
+            'hover:text-white transition py-2',
+            isHomePage ? 'text-white' : 'text-white/80',
+          ]"
+          @click="closeMenu"
         >
           Projets
-        </button>
-
+        </NuxtLink>
         <NuxtLink
           to="/contact"
-          class="hover:text-white transition py-2"
-          :class="isContactPage ? 'text-white' : 'text-white/80'"
+          :class="[
+            'hover:text-white transition py-2',
+            isContactPage ? 'text-white' : 'text-white/80',
+          ]"
           @click="closeMenu"
         >
           Contact
