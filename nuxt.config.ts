@@ -57,7 +57,7 @@ export default defineNuxtConfig({
         lang: "fr",
       },
 
-      titleTemplate: "%s - Nicolas Deza",
+      titleTemplate: "%s – Nicolas Deza",
 
       meta: [
         {
