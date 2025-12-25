@@ -18,7 +18,7 @@ useHead({
 useSeoMeta({
   title: "Développeur Web",
   description:
-    "Développeur Full Web spécialisé en Nuxt, Vue.js, Laravel et WordPress. Je crée des sites web sur mesure, e-commerce et applications web modernes en Belgique.",
+    "Développeur Web spécialisé en Nuxt, Vue.js, Laravel et WordPress. Je crée des sites web sur mesure, e-commerce et applications web modernes en Belgique.",
 
   robots: "index, follow",
 
