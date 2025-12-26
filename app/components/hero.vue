@@ -143,12 +143,12 @@ onMounted(async () => {
             role="status"
             aria-live="polite"
           >
-            <span class="relative flex h-2.0 w-2.0" aria-hidden="true">
+            <span class="relative flex h-2 w-2" aria-hidden="true">
               <span
                 class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
               ></span>
               <span
-                class="relative inline-flex rounded-full h-2.0 w-2.0 bg-emerald-400"
+                class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"
               ></span>
             </span>
             <span>Disponible pour nouveaux projets</span>
