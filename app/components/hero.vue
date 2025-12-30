@@ -136,16 +136,16 @@ onMounted(async () => {
           </a>
 
           <div
-            class="flex items-center gap-2 text-sm text-emerald-400"
+            class="flex items-center gap-2 text-sm text-[#05DF72] px-4 py-2 rounded-full transition-colors duration-300 hover:bg-[#05DF72]/10 hover:cursor-pointer"
             role="status"
             aria-live="polite"
           >
             <span class="relative flex h-2 w-2" aria-hidden="true">
               <span
-                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#05DF72] opacity-75"
               ></span>
               <span
-                class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"
+                class="relative inline-flex h-2 w-2 rounded-full bg-[#05DF72]"
               ></span>
             </span>
             <span>Disponible pour nouveaux projets</span>
