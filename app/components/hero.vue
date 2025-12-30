@@ -89,7 +89,7 @@ onMounted(async () => {
 <template>
   <section
     id="hero"
-    class="min-h-[100dvh] flex items-center px-4 pt-12 sm:pt-0"
+    class="min-h-[100dvh] flex items-center px-4"
     aria-labelledby="hero-title"
   >
     <div class="w-full flex justify-center">
@@ -101,19 +101,16 @@ onMounted(async () => {
           class="animate-item text-4xl sm:text-6xl lg:text-7xl font-semibold leading-tight"
         >
           Nicolas Deza
+          <span
+            class="block text-xl sm:text-2xl lg:text-3xl font-normal mt-3 sm:mt-4 text-white/80"
+          >
+            Créateur de sites web freelance
+          </span>
         </h1>
 
         <p
           :ref="setItemRef"
-          class="animate-item mt-4 text-xl text-white/80"
-          role="doc-subtitle"
-        >
-          Créateur de sites web
-        </p>
-
-        <p
-          :ref="setItemRef"
-          class="animate-item mt-6 text-lg text-white/60 leading-relaxed"
+          class="animate-item mt-4 sm:mt-6 text-lg text-white/60 leading-relaxed"
         >
           Design moderne, performance et
           <span
