@@ -89,7 +89,7 @@ onMounted(async () => {
 <template>
   <section
     id="hero"
-    class="min-h-[100dvh] flex items-center px-4"
+    class="min-h-[100dvh] flex items-center px-4 mt-6 sm:mt-0"
     aria-labelledby="hero-title"
   >
     <div class="w-full flex justify-center">
