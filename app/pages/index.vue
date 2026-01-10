@@ -105,7 +105,7 @@ onMounted(async () => {
       link="https://nuxt-starter-vitrine.vercel.app/"
     />
     <ProjectCard
-      reverse
+      
       title="Avh-Garden"
       description="Site vitrine pour une entreprise dans le batiment d'aménagement intérieur et extérieur."
       role="Design & développement"
@@ -114,6 +114,7 @@ onMounted(async () => {
       link="https://avh-garden.be/"
     />
     <ProjectCard
+      reverse
       title="Samu-Horticole"
       description="Dashboard pour un indépendant horticole, permettant la gestion des clients et machines."
       role="Design & développement"
