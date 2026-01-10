@@ -98,7 +98,7 @@ onMounted(async () => {
     <ProjectCard
       reverse
       title="Nuxt Starter"
-      description="Starter basé sur Nuxt Js avec Tailwind, Dark mode, ESLint, ect"
+      description="Starter Nuxt moderne, optimisé pour la performance, le SEO et le dark mode, avec un design soigné prêt pour la production."
       role="Design & développement"
       stack="Nuxt, Tailwind"
       image="/projects/nuxt-starter.jpg"
