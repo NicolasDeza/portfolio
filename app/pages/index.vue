@@ -97,6 +97,15 @@ onMounted(async () => {
     />
     <ProjectCard
       reverse
+      title="Nuxt Starter"
+      description="Starter basé sur Nuxt Js avec Tailwind, Dark mode, ESLint, ect"
+      role="Design & développement"
+      stack="Nuxt, Tailwind"
+      image="/projects/nuxt-starter.jpg"
+      link="https://nuxt-starter-vitrine.vercel.app/"
+    />
+    <ProjectCard
+      reverse
       title="Avh-Garden"
       description="Site vitrine pour une entreprise dans le batiment d'aménagement intérieur et extérieur."
       role="Design & développement"
