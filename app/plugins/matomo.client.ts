@@ -1,8 +1,6 @@
 export default defineNuxtPlugin(() => {
   if (!import.meta.client) return;
 
-  console.log("🔥 Matomo plugin chargé");
-
   const _paq = (window as any)._paq || [];
   (window as any)._paq = _paq;
 
