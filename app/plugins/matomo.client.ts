@@ -1,6 +1,7 @@
 export default defineNuxtPlugin(() => {
+  if (!import.meta.client) return;
+
   console.log("🔥 Matomo plugin chargé");
-  if (process.server) return;
 
   const _paq = (window as any)._paq || [];
   (window as any)._paq = _paq;
@@ -12,11 +13,9 @@ export default defineNuxtPlugin(() => {
   _paq.push(["setTrackerUrl", u + "matomo.php"]);
   _paq.push(["setSiteId", "1"]);
 
-  const d = document;
-  const g = d.createElement("script");
-  const s = d.getElementsByTagName("script")[0];
-
+  const g = document.createElement("script");
   g.async = true;
   g.src = u + "matomo.js";
-  s.parentNode?.insertBefore(g, s);
+
+  document.head.appendChild(g);
 });
