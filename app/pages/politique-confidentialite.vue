@@ -109,7 +109,7 @@ useSeoMeta({
           <ul class="list-disc list-inside space-y-1 ml-4">
             <li>Nicolas Deza (responsable du site)</li>
             <li>
-              O2switch (hébergeur du site, soumis à des obligations de
+              Vercel (hébergeur du site, soumis à des obligations de
               confidentialité)
             </li>
           </ul>
