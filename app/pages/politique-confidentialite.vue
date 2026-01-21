@@ -53,10 +53,24 @@ useSeoMeta({
           </ul>
         </div>
 
-        <!-- 3. Finalité -->
+        <!-- 3. Analyse d'audience -->
         <div>
           <h2 class="text-xl font-medium text-white mb-3">
-            3. Finalité du traitement
+            3. Analyse d'audience
+          </h2>
+          <p>
+            Ce site utilise Matomo, un outil d'analyse d'audience respectueux de
+            la vie privée, configuré sans cookies publicitaires et avec
+            anonymisation des adresses IP. Les données collectées servent
+            uniquement à mesurer l'audience du site et ne sont pas utilisées à
+            des fins commerciales.
+          </p>
+        </div>
+
+        <!-- 4. Finalité -->
+        <div>
+          <h2 class="text-xl font-medium text-white mb-3">
+            4. Finalité du traitement
           </h2>
           <p>
             Les données collectées sont utilisées uniquement pour répondre à vos
@@ -65,19 +79,19 @@ useSeoMeta({
           </p>
         </div>
 
-        <!-- 4. Base légale -->
+        <!-- 5. Base légale -->
         <div>
-          <h2 class="text-xl font-medium text-white mb-3">4. Base légale</h2>
+          <h2 class="text-xl font-medium text-white mb-3">5. Base légale</h2>
           <p>
             Le traitement de vos données repose sur votre consentement explicite
             lors de l'envoi du formulaire de contact (article 6.1.a du RGPD).
           </p>
         </div>
 
-        <!-- 5. Durée -->
+        <!-- 6. Durée -->
         <div>
           <h2 class="text-xl font-medium text-white mb-3">
-            5. Durée de conservation
+            6. Durée de conservation
           </h2>
           <p>
             Vos données sont conservées pendant une durée maximale de 1 an à
@@ -86,10 +100,10 @@ useSeoMeta({
           </p>
         </div>
 
-        <!-- 6. Destinataires -->
+        <!-- 7. Destinataires -->
         <div>
           <h2 class="text-xl font-medium text-white mb-3">
-            6. Destinataires des données
+            7. Destinataires des données
           </h2>
           <p class="mb-3">Vos données sont uniquement accessibles à :</p>
           <ul class="list-disc list-inside space-y-1 ml-4">
@@ -104,9 +118,9 @@ useSeoMeta({
           </p>
         </div>
 
-        <!-- 7. Sécurité -->
+        <!-- 8. Sécurité -->
         <div>
-          <h2 class="text-xl font-medium text-white mb-3">7. Sécurité</h2>
+          <h2 class="text-xl font-medium text-white mb-3">8. Sécurité</h2>
           <p>
             Nous mettons en œuvre des mesures techniques et organisationnelles
             appropriées pour protéger vos données contre tout accès non
@@ -114,9 +128,9 @@ useSeoMeta({
           </p>
         </div>
 
-        <!-- 8. Vos droits -->
+        <!-- 9. Vos droits -->
         <div>
-          <h2 class="text-xl font-medium text-white mb-3">8. Vos droits</h2>
+          <h2 class="text-xl font-medium text-white mb-3">9. Vos droits</h2>
           <p class="mb-3">
             Conformément au RGPD, vous disposez des droits suivants :
           </p>
@@ -140,9 +154,9 @@ useSeoMeta({
           </p>
         </div>
 
-        <!-- 9. Contact -->
+        <!-- 10. Contact -->
         <div>
-          <h2 class="text-xl font-medium text-white mb-3">9. Contact</h2>
+          <h2 class="text-xl font-medium text-white mb-3">10. Contact</h2>
           <p>
             Pour toute question concernant cette politique de confidentialité ou
             l'utilisation de vos données personnelles, vous pouvez nous
@@ -161,10 +175,10 @@ useSeoMeta({
           </p>
         </div>
 
-        <!-- 10. Modifications -->
+        <!-- 11. Modifications -->
         <div>
           <h2 class="text-xl font-medium text-white mb-3">
-            10. Modifications de la politique
+            11. Modifications de la politique
           </h2>
           <p>
             Cette politique de confidentialité peut être modifiée à tout moment.
