@@ -58,17 +58,17 @@ html {
     #3b82f6 280deg,
     transparent 320deg 360deg
   );
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   mask-composite: exclude;
-  opacity: 0;
+  opacity: 1;
   z-index: -1;
   pointer-events: none;
-}
-
-.neon-border:hover::before {
-  opacity: 1;
   animation: electric-border 3s linear infinite;
 }
 
