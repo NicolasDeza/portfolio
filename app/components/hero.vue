@@ -2,6 +2,7 @@
 import { ref, onMounted, nextTick } from "vue";
 import type { VNodeRef } from "vue";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Éléments à animer (dans l’ordre du DOM)
 const items = ref<HTMLElement[]>([]);
@@ -12,6 +13,7 @@ const setItemRef: VNodeRef = (el) => {
     items.value.push(el);
   }
 };
+
 // Animation texte
 const words = ["fiabilité", "rapidité", "durabilité"] as const;
 const currentWord = ref("");
