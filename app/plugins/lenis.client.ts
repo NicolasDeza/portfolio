@@ -2,7 +2,7 @@ import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export default defineNuxtPlugin(() => {
+export default defineNuxtPlugin((nuxtApp) => {
   // Enregistrer le plugin ScrollTrigger
   gsap.registerPlugin(ScrollTrigger);
 
@@ -26,6 +26,11 @@ export default defineNuxtPlugin(() => {
   });
 
   gsap.ticker.lagSmoothing(0);
+
+  // Remettre le scroll en haut lors des changements de page
+  nuxtApp.hook("page:finish", () => {
+    lenis.scrollTo(0, { immediate: true });
+  });
 
   // Fournir l'instance Lenis globalement
   return {
