@@ -138,7 +138,7 @@ onMounted(async () => {
           </a>
 
           <div
-            class="flex items-center gap-3 text-sm text-[#05DF72] px-5 py-3 rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-sm transition-all duration-300 hover:bg-white/[0.06] hover:border-white/15"
+            class="w-full sm:w-auto flex items-center justify-center gap-3 text-sm text-[#05DF72] px-5 py-3 rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-sm transition-all duration-300 hover:bg-white/[0.06] hover:border-white/15"
             role="status"
             aria-live="polite"
           >
@@ -150,7 +150,7 @@ onMounted(async () => {
                 class="relative inline-flex h-2 w-2 rounded-full bg-[#05DF72]"
               ></span>
             </span>
-            <span class="font-medium">Disponible pour nouveaux projets</span>
+            <span class="font-medium">Disponible nouveaux projets</span>
           </div>
         </div>
       </div>
