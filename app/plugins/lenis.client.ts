@@ -18,7 +18,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     infinite: false,
   });
 
-  // Synchroniser Lenis avec GSAP ScrollTrigger
+  // Synchroniser Lenis avec les anims GSAP ScrollTrigger
   lenis.on("scroll", ScrollTrigger.update);
 
   gsap.ticker.add((time) => {
