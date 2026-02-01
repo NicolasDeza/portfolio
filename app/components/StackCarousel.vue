@@ -27,10 +27,10 @@ const stack = [
     >
       <!-- Gradients -->
       <div
-        class="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#171717] to-transparent z-10"
+        class="pointer-events-none absolute left-0 top-0 h-full w-24"
       />
       <div
-        class="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#171717] to-transparent z-10"
+        class="pointer-events-none absolute right-0 top-0 h-full w-24"
       />
 
       <!-- Logos -->
