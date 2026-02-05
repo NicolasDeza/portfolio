@@ -88,6 +88,16 @@ onMounted(async () => {
       Projets réalisés
     </h2>
     <ProjectCard
+      reverse
+      title="CG Renov"
+      description="Site vitrine sur mesure pour une entreprise de rénovation belge, avec un design professionnel, des performances élevées et une structure SEO optimisée pour la visibilité locale."
+      role="Design & développement"
+      stack="Nuxt, Tailwind"
+      image="/projects/cgrenov.jpg"
+      link="https://www.cgrenov.be/"
+    />
+
+    <ProjectCard
       title="Atelier de Bidibule"
       description="Site e-commerce sur mesure pour une créatrice indépendante, avec personnalisation des produits et paiement en ligne."
       role="Design & développement"
