@@ -93,7 +93,7 @@ onMounted(async () => {
       description="Site vitrine sur mesure pour une entreprise de rénovation belge, avec un design professionnel, des performances élevées et une structure SEO optimisée pour la visibilité locale."
       role="Design & développement"
       stack="Nuxt, Tailwind"
-      image="/projects/cgrenov.jpg"
+      image="/projects/og-cgrenov.jpg"
       link="https://www.cgrenov.be/"
     />
 
