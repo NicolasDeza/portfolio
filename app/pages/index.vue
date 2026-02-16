@@ -120,7 +120,7 @@ onMounted(async () => {
       description="Site vitrine pour une entreprise dans le batiment d'aménagement intérieur et extérieur."
       role="Design & développement"
       stack="Wordpress, Elementor"
-      image="/projects/avh-garden.be.png"
+      image="/projects/og-avhgarden.jpg"
       link="https://avh-garden.be/"
     />
     <ProjectCard
