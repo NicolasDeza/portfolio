@@ -92,7 +92,7 @@ onMounted(async () => {
       title="CG Renov"
       description="Site vitrine sur mesure pour une entreprise de rénovation belge, avec un design professionnel, des performances élevées et une structure SEO optimisée pour la visibilité locale."
       role="Design & développement"
-      stack="Nuxt, Tailwind"
+      stack="Nuxt, Tailwind, GSAP"
       image="/projects/og-cgrenov.jpg"
       link="https://www.cgrenov.be/"
     />
@@ -119,7 +119,7 @@ onMounted(async () => {
       title="Avh-Garden"
       description="Site vitrine pour une entreprise dans le batiment d'aménagement intérieur et extérieur."
       role="Design & développement"
-      stack="Wordpress, Elementor"
+      stack="Nuxt, Tailwind"
       image="/projects/og-avhgarden.jpg"
       link="https://avh-garden.be/"
     />
